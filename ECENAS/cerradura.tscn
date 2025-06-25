@@ -1,0 +1,316 @@
+[gd_scene load_steps=12 format=3 uid="uid://dcidcnvjjiyap"]
+
+[ext_resource type="Script" uid="uid://c52k722m05cvh" path="res://Script/cerradura.gd" id="1_h1d63"]
+[ext_resource type="Texture2D" uid="uid://8fjhe5obvl6c" path="res://img/A_high-resolution_digital_photograph_of_an_aged,_c_clean.png" id="1_rmpfm"]
+[ext_resource type="Texture2D" uid="uid://crmj4vnr2pcud" path="res://img/A_digital_photograph_features_a__GANZÚA,__or_lockp_clean.png" id="2_ib4pv"]
+[ext_resource type="Shader" uid="uid://5d6nj08auip6" path="res://Script/shader/borroso.gdshader" id="2_jrljs"]
+[ext_resource type="Texture2D" uid="uid://6k4uj7aq3y0q" path="res://img/A_high-resolution_digital_photograph_features_a_st_clean.png" id="3_h1d63"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_i7o7b"]
+shader = ExtResource("2_jrljs")
+shader_parameter/blur_size = 5.056
+shader_parameter/samples = 65
+
+[sub_resource type="Animation" id="Animation_h1d63"]
+resource_name = "Inicio"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ganzua:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(576, -16.68), Vector2(576, 272)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ganzua:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-2.34747, -1.5708]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("destornillador:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(782.6, 589.79), Vector2(584, 392)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("destornillador:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [1.04196, 0.765153]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("chapa:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_jrljs"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ganzua:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(576, 272)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ganzua:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-1.5708]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("destornillador:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(584, 392)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("destornillador:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.765153]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ganzua:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.354338, 0.354338)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("chapa:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_850h6"]
+resource_name = "correct"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("chapa:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.5708]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ganzua:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(576, 272), Vector2(640.005, 318.54)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("destornillador:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(584, 392), Vector2(520, 320)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("destornillador:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.765153, 2.61799]
+}
+
+[sub_resource type="Animation" id="Animation_i7o7b"]
+resource_name = "probar"
+length = 0.2
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ganzua:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.354338, 0.354338), Vector2(0.389, 0.389)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("chapa:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.0174533]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("destornillador:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.765153, 0.698132]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_i7o7b"]
+_data = {
+&"Inicio": SubResource("Animation_h1d63"),
+&"RESET": SubResource("Animation_jrljs"),
+&"correct": SubResource("Animation_850h6"),
+&"probar": SubResource("Animation_i7o7b")
+}
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_h1d63")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_i7o7b")
+layout_mode = 0
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 1160.0
+offset_bottom = 656.0
+
+[node name="chapa" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(0.5915, 0.5915)
+texture = ExtResource("1_rmpfm")
+region_enabled = true
+region_rect = Rect2(0, 0, 615, 603.036)
+
+[node name="ganzua" type="Sprite2D" parent="."]
+position = Vector2(576, 272)
+rotation = -1.5708
+scale = Vector2(0.354338, 0.354338)
+texture = ExtResource("2_ib4pv")
+offset = Vector2(416, 0)
+region_enabled = true
+region_rect = Rect2(0, 0, 832, 59.3662)
+
+[node name="destornillador" type="Sprite2D" parent="."]
+position = Vector2(584, 392)
+rotation = 0.765153
+scale = Vector2(0.732759, 0.732759)
+texture = ExtResource("3_h1d63")
+offset = Vector2(422.886, -6.10352e-05)
+region_enabled = true
+region_rect = Rect2(0, 0, 879, 174.105)
+
+[node name="animacion" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_i7o7b")
+}
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 8.0
+offset_right = 193.0
+offset_bottom = 65.0
+theme_override_font_sizes/font_size = 41
+text = "VIDAS:"
+
+[node name="vidas" type="Label" parent="Label"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 32.0
+offset_right = 88.0
+offset_bottom = 123.0
+theme_override_font_sizes/font_size = 66
+text = "0"
+horizontal_alignment = 1
