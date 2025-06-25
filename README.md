@@ -4,8 +4,9 @@ Una recreación del sistema de cerraduras de la saga **Fallout**, lista para ser
 
 ---
 
-## 🎥 Demostración en video  
-[https://youtu.be/fCOAnkGldYM](https://youtu.be/fCOAnkGldYM)
+## 🎥 Demostración en video
+
+[![Ver en YouTube](https://img.youtube.com/vi/fCOAnkGldYM/0.jpg)](https://youtu.be/fCOAnkGldYM)
 
 🛠️ **Versión de Godot utilizada:** Godot 4.2 (la misma utilizada en el video)
 
@@ -39,3 +40,4 @@ Una recreación del sistema de cerraduras de la saga **Fallout**, lista para ser
 
 **Creado por:** Gerardo M.  
 **Inspirado en:** La mecánica original de Fallout (Bethesda Softworks)
+
